@@ -1,5 +1,5 @@
 # Group-Website
-# Jose Talon, Benjamin Buchan, Gary Ung, Himanshu Rana, Dan Barry
+Jose Talon, Benjamin Buchan, Gary Ung, Himanshu Rana, Dan Barry
 
 # Problem
 Finding a good movie to watch can be difficult. There are so many genres and movies
