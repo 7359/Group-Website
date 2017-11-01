@@ -3,24 +3,30 @@
     <head>
         <title>FreePopcorn - Sample Review Page</title>
         <style>
+            a:link{
+                text-decoration: none;
+            }
             body, html{
                 height: 100%;
                 margin: 0;
                 font: 400 15px/1.8 "Helvetica", sans-serif;
                 color: #777;
             }
+            h2{
+                text-transform: uppercase;
+            }
             .topbar{
                 background-image: url(images/samplerev-topbar.jpg);
                 min-height: 15%;
-                background-attachment: fixed;
                 background-position: center;
                 background-repeat:no-repeat;
                 background-size: cover;
+                
             }
             .titlebar{
                 position: absolute;
                 text-align: center;
-                top: 9.25%;
+                top: 9.5%;
             }
             .titlecard{
                 text-align: center;
@@ -29,28 +35,35 @@
             .titlecard span.border {
                 background-color: #111;
                 color: #fff;
-                padding: 18px;  
+                padding: 0px 18px 18px 18px;  
                 font-size: 25px;
                 letter-spacing: 5px;
             }
+            .tagcard{
+                text-align: center;
+                background-color: transparent;
+                font-family: "Arial Black"
+            }
+            .tagcard span.border {
+                background-color: #e8ae27;
+                color: #111;
+                padding: 10px 10px 10px 10px;  
+                font-size: 12px;
+                letter-spacing: normal;
+            }
             .titlebar span.border {
-                background-color: #111;
-                color: #fff;
-                padding: 18px;  
+                background-color: #222;
+                color: #eee;
+                padding: 18px 18px 18px 18px;  
                 font-size: 25px;
-                letter-spacing: 5px;
+                letter-spacing: normal;
+            }
+            .titlebar span.border:hover{
+                background-color: #111;
             }
             .parallax1{
                 background-image: url(images/samplerev-parallax1.jpg);
                 height: 500px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat:no-repeat;
-                background-size: cover;
-            }
-            .parallax2{
-                background-image: url(images/samplerev-parallax2.jpg);
-                height: 500 px;
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat:no-repeat;
@@ -61,7 +74,7 @@
                 text-align: justify;
                 color: black;
                 letter-spacing: normal;
-                padding: 10px 100px 10px 100px;
+                padding: 10px 100px 50px 100px;
                 font: 400 15px/1.8 "Lato", sans-serif;    
             }
         </style>
@@ -69,24 +82,20 @@
   <body>
         <div class="topbar">
             <div class="titlebar">
-                <a href="index.html">
-                    <span class="border">Home</span>
-                </a>
+                <a href="index.html"><span class="border">Home</span></a><a href="genrepage.html"><span class="border">Genres</span></a><a href="index.html"><span class="border">This Week on Netflix</span></a><a href="index.html"><span class="border">Tickets and Showtimes</span></a><a href=""><span class="border">Contact Us</span></a>
             </div>
       </div>
       
       <div class="parallax1">
       </div>
-      
-      <div class="titlecard">
-        <span class="border">THE AVENGERS</span>
+      <div class="titlecard"><span class="border"><h1>THE AVENGERS</h1></span><div class="tagcard">
+     <a href=""> <span class="border">ACTION</span></a> <a href=""><span class="border">SUPERHERO</span></a> <a href=""><span class="border">BLOCKBUSTER</span></a></div>
+          
       </div>
     <div class="review"> 
-        <p>
+            <h2>    
         Roger Ebert says:
-        </p>
-            <br>
-        <br>
+            </h2>
         <br>
 One of the weapons Marvel used in its climb to comic-book dominance was a willingness to invent new characters at a dizzying speed. There are so many Marvel universes, indeed, that some superheroes do not even exist in one another's worlds, preventing gridlock. The Avengers however do share the same time and space continuum, although in recent years, they've been treated in separate, single-superhero movies. One assumes the idle Avengers follow the exploits of the employed ones on the news.
 <br>
@@ -112,7 +121,14 @@ Much of this battle takes place in midtown Manhattan, where the neatest sequence
 "Comic-Con nerds will have multiple orgasms," predicts critic David Edelstein in New York magazine, confirming something I had vaguely suspected about them. If he is correct, it's time for desperately needed movies to re-educate nerds in the joys of sex. "The Avengers" is done well by Joss Whedon, with style and energy. It provides its fans with exactly what they desire. Whether it is exactly what they deserve is arguable.
 
 </div>
+      <div class="titlecard"><span class="border">TRAILERS, POSTERS, ETC</span>
+      <br>
+          <br>
+          <a href=""><img src=""></a>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/eOrNdBpGMv8" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/zatgnqdIefs" frameborder="0" allowfullscreen></iframe>
       
+      </div>
       <div class="parallax1">
       </div>
     </body>
