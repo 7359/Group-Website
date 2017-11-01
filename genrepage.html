@@ -125,12 +125,12 @@
                 background-size: cover;
             }
             .genre{
-                background-color:floralwhite;
+                background-color:#111;
                 text-align: justify;
-                color: black;
+                color: #ddd;
                 letter-spacing: normal;
                 padding: 10px 100px 50px 100px;
-                font: 400 15px/1.8 "Lato", sans-serif;    
+                font: 400 25px/1.8 "Lato", sans-serif;    
             }
 
             .scrollContainer{
@@ -144,6 +144,45 @@
                 overflow-y: hidden;
                 height: 335px;
                 white-space: nowrap;
+            }
+            .barItem{
+                width: 16%;
+                background-color:#111;
+                color:#ddd;
+                text-align: center;
+                padding: 15px 0px 15px 0px;
+                display:inline-block;
+            }
+            .barItem:hover{
+                background-color:#222;
+            }
+            .sidebar{
+                top:66.5%;
+                height:146.5%;
+                width:230px;
+                right: 0;
+                text-align: center;
+                font-size: 25px;
+                color: #777;
+                background-color:#111;
+                position:absolute;z-index:1;overflow:auto
+            }
+            .sideitem{
+                font-size: 16px;
+                color: #bbb;
+                padding:8px 16px;
+                float:left;
+                text-align: center;
+                width:auto;
+                border:none;
+                outline:none;
+                display:block
+                    background-color:#111;
+
+            }
+            .sideitem:hover{
+                background-color:#222;
+
             }
         </style>
     </head>
@@ -159,66 +198,102 @@
             </div>
         </div>
         <div class="genre">
-            <h2>Action</h2>
-                <table>
-                    <tr>
-                        <td><img src="images/certified.png" height=32px></td>
-                        <td><img src="images/certified.png" height=32px></td>
-                        <td><img src="images/certified.png" height=32px></td>
-                        <td><img src="images/certified.png" height=32px></td>
-                        <td><img src="images/certified.png" height=32px></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="images/posters/baby-driver.jpg">
-                                <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/></a>
-                            <figcaption>
-                                <em>Baby Driver</em>
-                            </figcaption>
-                        </td>
-                        <td>
-                            <a href="images/posters/logan.jpg">
-                                <img src="images/posters/logan.jpg" title="Logan" height=275px/></a>
-                            <figcaption>
-                                <em>Logan</em>
-                            </figcaption>
-                        </td>
-                        <td>
-                            <a href="images/posters/guardians-of-the-galaxy-vol-2.jpg">
-                                <img src="images/posters/guardians-of-the-galaxy-vol-2.jpg" title="Guardians of the Galaxy vol. 2" height=275px/></a>
-                            <figcaption>
-                                <em>Guardians of the Galaxy vol. 2</em>
-                            </figcaption>
-                        </td>
-                        <td>
-                            <a href="images/posters/rogue-one.jpg">
-                                <img src="images/posters/rogue-one.jpg" title="Rogue One" height=275px/></a>
-                            <figcaption>
-                                <em>Rogue One</em>
-                            </figcaption>
-                        </td>
-                        <td>
-                            <a href="images/posters/doctor-strange.jpg">
-                                <img src="images/posters/doctor-strange.jpg" title="Doctor Strange" height=275px/></a>
-                            <figcaption>
-                                <em>Doctor Strange</em>
-                            </figcaption>
-                        </td>
-                        <td>
-                            <!--To give the idea there's more stuff-->
-                            <a href="images/poster-arrow-right.png">
-                                <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="https://www.netflix.com/title/80108239"><img src="images/netflix.png" width=190></a></td>
-                        <td><a href="https://www.netflix.com/title/80108237"><img src="images/netflix.png" width=190></a></td>
-                    </tr>
-                </table>
-            
+            <h2> Action</h2>
+            <a href="images/posters/baby-driver.jpg">
+                <div class="barItem">
+                    
+                    <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/>
+                    <h3>Baby Driver</h3><img src="images/certified.png" height=32px> &nbsp;&nbsp;&nbsp; <img src="https://orig00.deviantart.net/2074/f/2016/352/e/b/netflix_honeycomb_icon_by_roxor470-das00oc.png" height=36px>
+                </div>
+            </a><a href="images/posters/baby-driver.jpg">
+                <div class="barItem">
+                    <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/>
+                    <h3>Baby Driver</h3><img src="images/certified.png" height=32px> &nbsp;&nbsp;&nbsp; <img src="https://orig00.deviantart.net/2074/f/2016/352/e/b/netflix_honeycomb_icon_by_roxor470-das00oc.png" height=36px>
+                </div>
+            </a>
+            <a href="images/posters/baby-driver.jpg">
+                <div class="barItem">
+                    <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/>
+                    <h3>Baby Driver</h3><img src="images/certified.png" height=32px> &nbsp;&nbsp;&nbsp; <img src="https://orig00.deviantart.net/2074/f/2016/352/e/b/netflix_honeycomb_icon_by_roxor470-das00oc.png" height=36px>
+                </div>
+            </a>
+            <a href="images/posters/baby-driver.jpg">
+                <div class="barItem">
+                    <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/>
+                    <h3>Baby Driver</h3><img src="images/certified.png" height=32px> &nbsp;&nbsp;&nbsp; <img src="https://orig00.deviantart.net/2074/f/2016/352/e/b/netflix_honeycomb_icon_by_roxor470-das00oc.png" height=36px>
+                </div>
+            </a>
+            <a href="images/posters/baby-driver.jpg">
+                <div class="barItem">
+                    <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/>
+                    <h3>Baby Driver</h3><img src="images/certified.png" height=32px> &nbsp;&nbsp;&nbsp; <img src="https://orig00.deviantart.net/2074/f/2016/352/e/b/netflix_honeycomb_icon_by_roxor470-das00oc.png" height=36px>
+                </div>
+            </a>
+            <a href="images/posters/baby-driver.jpg">
+                <div class="barItem">
+                    <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/>
+                    <h3>Baby Driver</h3><img src="images/certified.png" height=32px> &nbsp;&nbsp;&nbsp; <img src="https://orig00.deviantart.net/2074/f/2016/352/e/b/netflix_honeycomb_icon_by_roxor470-das00oc.png" height=36px>
+                </div>
+            </a>
+            <table>
+                <tr>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="images/posters/baby-driver.jpg">
+                            <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/></a>
+                        <figcaption>
+                            <em>Baby Driver</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/logan.jpg">
+                            <img src="images/posters/logan.jpg" title="Logan" height=275px/></a>
+                        <figcaption>
+                            <em>Logan</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/guardians-of-the-galaxy-vol-2.jpg">
+                            <img src="images/posters/guardians-of-the-galaxy-vol-2.jpg" title="Guardians of the Galaxy vol. 2" height=275px/></a>
+                        <figcaption>
+                            <em>Guardians of the Galaxy vol. 2</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/rogue-one.jpg">
+                            <img src="images/posters/rogue-one.jpg" title="Rogue One" height=275px/></a>
+                        <figcaption>
+                            <em>Rogue One</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/doctor-strange.jpg">
+                            <img src="images/posters/doctor-strange.jpg" title="Doctor Strange" height=275px/></a>
+                        <figcaption>
+                            <em>Doctor Strange</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <!--To give the idea there's more stuff-->
+                        <a href="images/poster-arrow-right.png">
+                            <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="https://www.netflix.com/title/80108239"><img src="images/netflix.png" width=190></a></td>
+                    <td><a href="https://www.netflix.com/title/80108237"><img src="images/netflix.png" width=190></a></td>
+                </tr>
+            </table>
+
         </div>
         <div class="parallax2">
         </div>
