@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <title>FreePopcorn - Sample Review Page</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <style>
             a:link{
                 text-decoration: none;
@@ -9,7 +10,7 @@
             body, html{
                 height: 100%;
                 margin: 0;
-                font: 400 15px/1.8 "Helvetica", sans-serif;
+                font: 400 14px/1.8 "Helvetica", sans-serif;
                 color: #777;
             }
             h2{
@@ -24,13 +25,31 @@
                 
             }
             .titlebar{
+                background-color: #111;
                 position: absolute;
                 text-align: center;
-                top: 9.5%;
+                top: 12%;
+                width:100%;
             }
             .titlecard{
                 text-align: center;
                 background-color: #111;
+                padding-top: 15px;
+            }
+            .title{
+                background-color: rgba(50, 50, 50, 0.6);
+                text-align: center;
+                position:absolute;
+                bottom:285px;
+                width: 100%;
+                font-family: "Trebuchet MS";
+            }
+            .title span.glass{
+                background-color: transparent;
+                color: #ddd;
+                padding: 0px 18px 0px 18px;  
+                font-size: 25px;
+                letter-spacing: 5px;
             }
             .titlecard span.border {
                 background-color: #111;
@@ -42,7 +61,7 @@
             .tagcard{
                 text-align: center;
                 background-color: transparent;
-                font-family: "Arial Black"
+                font-family: "Arial Black";
             }
             .tagcard span.border {
                 background-color: #e8ae27;
@@ -51,11 +70,14 @@
                 font-size: 12px;
                 letter-spacing: normal;
             }
+            .tagcard span.border:hover{
+                background-color: #b78819;
+            }
             .titlebar span.border {
                 background-color: #222;
                 color: #eee;
-                padding: 18px 18px 18px 18px;  
-                font-size: 25px;
+                padding: 15px 18px 15px 18px;  
+                font-size: 17px;
                 letter-spacing: normal;
             }
             .titlebar span.border:hover{
@@ -77,6 +99,17 @@
                 padding: 10px 100px 50px 100px;
                 font: 400 15px/1.8 "Lato", sans-serif;    
             }
+            .scrollContainer{
+                height=335px;
+                width=1800px;
+                display: inline-block;
+            }
+            .scrollBox{
+                overflow-x: scroll;
+                overflow-y: hidden;
+                height: 335px;
+                white-space: nowrap;
+            }
         </style>
     </head>
   <body>
@@ -87,16 +120,18 @@
       </div>
       
       <div class="parallax1">
-      </div>
-      <div class="titlecard"><span class="border"><h1>THE AVENGERS</h1></span><div class="tagcard">
+          <div class="title">
+      <span class="glass"><br><h1>THE AVENGERS</h1></span><div class="tagcard">
      <a href=""> <span class="border">ACTION</span></a> <a href=""><span class="border">SUPERHERO</span></a> <a href=""><span class="border">BLOCKBUSTER</span></a></div>
-          
+      
+              </div>
       </div>
     <div class="review"> 
             <h2>    
         Roger Ebert says:
             </h2>
-        <br>
+        
+        <hr>
 One of the weapons Marvel used in its climb to comic-book dominance was a willingness to invent new characters at a dizzying speed. There are so many Marvel universes, indeed, that some superheroes do not even exist in one another's worlds, preventing gridlock. The Avengers however do share the same time and space continuum, although in recent years, they've been treated in separate, single-superhero movies. One assumes the idle Avengers follow the exploits of the employed ones on the news.
 <br>
         <br>
@@ -121,14 +156,21 @@ Much of this battle takes place in midtown Manhattan, where the neatest sequence
 "Comic-Con nerds will have multiple orgasms," predicts critic David Edelstein in New York magazine, confirming something I had vaguely suspected about them. If he is correct, it's time for desperately needed movies to re-educate nerds in the joys of sex. "The Avengers" is done well by Joss Whedon, with style and energy. It provides its fans with exactly what they desire. Whether it is exactly what they deserve is arguable.
 
 </div>
-      <div class="titlecard"><span class="border">TRAILERS, POSTERS, ETC</span>
+      
+      <div class="titlecard"><span class="border">
+          TRAILERS, POSTERS, ETC</span>
       <br>
           <br>
-          <a href=""><img src=""></a>
+          <div class="scrollBox">
+              <div class="scrollContainer">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/eOrNdBpGMv8" frameborder="0" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/zatgnqdIefs" frameborder="0" allowfullscreen></iframe>
-      
+          <a href="http://www.chapterq8.com/wp-content/uploads/2012/02/The-Avengers-Poster.jpg"><img src="http://www.chapterq8.com/wp-content/uploads/2012/02/The-Avengers-Poster.jpg" height=315 width=auto></a>
+          <a href="https://orig00.deviantart.net/27a1/f/2011/276/5/a/the_avengers___poster_update_by_themadbutcher-d4bqr2n.jpg"><img src="https://orig00.deviantart.net/27a1/f/2011/276/5/a/the_avengers___poster_update_by_themadbutcher-d4bqr2n.jpg" height=315 width=auto></a>
+          <a href="https://img00.deviantart.net/9a9d/i/2014/255/6/c/marvel_s_the_avengers_psd_by_ultrama6net1cart-d7ybhhb.png"><img src="https://img00.deviantart.net/9a9d/i/2014/255/6/c/marvel_s_the_avengers_psd_by_ultrama6net1cart-d7ybhhb.png" height=315 width=auto></a>
       </div>
+              </div>
+          </div>
       <div class="parallax1">
       </div>
     </body>
