@@ -2,239 +2,447 @@
 <html lang="en-US">
     <head>
         <title>Free Popcorn</title>
-        <link rel="stylesheet" href="stylesheets/genrepage.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <style>
+            table{
+                width: 100%;
+            }
+
+            td{
+                width: 190px;
+                text-align: center;
+                vertical-align: top;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            a:link{
+                text-decoration: none;
+            }
+
+            body, html{
+                height: 100%;
+                margin: 0;
+                font: 400 14px/1.8 "Helvetica", sans-serif;
+                color: #777;
+            }
+
+            h2{
+                text-transform: uppercase;
+            }
+            
+            .topbar{
+                background-image: url(images/samplerev-topbar.jpg);
+                min-height: 15%;
+                background-position: center;
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            .titlebar{
+                background-color: #111;
+                position: absolute;
+                text-align: center;
+                top: 12%;
+                width:100%;
+            }
+
+            .titlecard{
+                text-align: center;
+                background-color: #111;
+                padding-top: 15px;
+            }
+
+            .title{
+                background-color: rgba(50, 50, 50, 0.6);
+                text-align: center;
+                position:absolute;
+                bottom:285px;
+                width: 100%;
+                font-family: "Trebuchet MS";
+            }
+
+            .title span.glass{
+                background-color: transparent;
+                color: #ddd;
+                padding: 0px 18px 0px 18px;  
+                font-size: 25px;
+                letter-spacing: 5px;
+            }
+
+            .titlecard span.border {
+                background-color: #111;
+                color: #fff;
+                padding: 0px 18px 18px 18px;  
+                font-size: 25px;
+                letter-spacing: 5px;
+            }
+
+            .tagcard{
+                text-align: center;
+                background-color: transparent;
+                font-family: "Arial Black";
+            }
+
+            .tagcard span.border {
+                background-color: #e8ae27;
+                color: #111;
+                padding: 10px 10px 10px 10px;  
+                font-size: 12px;
+                letter-spacing: normal;
+            }
+
+            .tagcard span.border:hover{
+                background-color: #b78819;
+            }
+
+            .titlebar span.border {
+                background-color: #222;
+                color: #eee;
+                padding: 15px 18px 15px 18px;  
+                font-size: 17px;
+                letter-spacing: normal;
+            }
+
+            .titlebar span.border:hover{
+                background-color: #111;
+            }
+
+            .parallax1{
+                background-image: url(images/theater-seats.jpg);
+                height: 555px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            .parallax2{
+                background-image: url(images/theater-seats.jpg);
+                height: 50px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            .genre{
+                background-color:floralwhite;
+                text-align: justify;
+                color: black;
+                letter-spacing: normal;
+                padding: 10px 100px 50px 100px;
+                font: 400 15px/1.8 "Lato", sans-serif;    
+            }
+
+            .scrollContainer{
+                height=335px;
+                width=1800px;
+                display: inline-block;
+            }
+
+            .scrollBox{
+                overflow-x: scroll;
+                overflow-y: hidden;
+                height: 335px;
+                white-space: nowrap;
+            }
+        </style>
     </head>
     <body>
-        <div class="topnav">
-            <a href="index.html">Home</a>
+        <div class="topbar">
+            <div class="titlebar">
+                <a href="index.html"><span class="border">Home</span></a><a href="genrepage.html"><span class="border">Genres</span></a><a href="index.html"><span class="border">This Week on Netflix</span></a><a href="index.html"><span class="border">Tickets and Showtimes</span></a><a href=""><span class="border">Contact Us</span></a>
+            </div>
         </div>
-        <table>
-            <tr>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="images/posters/baby-driver.jpg">
-                        <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/></a>
-                    <figcaption>
-                        <em>Baby Driver</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/logan.jpg">
-                        <img src="images/posters/logan.jpg" title="Logan" height=275px/></a>
-                    <figcaption>
-                        <em>Logan</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/guardians-of-the-galaxy-vol-2.jpg">
-                        <img src="images/posters/guardians-of-the-galaxy-vol-2.jpg" title="Guardians of the Galaxy vol. 2" height=275px/></a>
-                    <figcaption>
-                        <em>Guardians of the Galaxy vol. 2</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/rogue-one.jpg">
-                        <img src="images/posters/rogue-one.jpg" title="Rogue One" height=275px/></a>
-                    <figcaption>
-                        <em>Rogue One</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/doctor-strange.jpg">
-                        <img src="images/posters/doctor-strange.jpg" title="Doctor Strange" height=275px/></a>
-                    <figcaption>
-                        <em>Doctor Strange</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <!--To give the idea there's more stuff-->
-                    <a href="images/poster-arrow-right.png">
-                        <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
-                </td>
-            </tr>
-            <tr>
-                <th>Comedy</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="images/posters/logan-lucky.jpg">
-                        <img src="images/posters/logan-lucky.jpg" title="Logan Lucky" height=275px/></a>
-                    <figcaption>
-                        <em>Logan Lucky</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/the-lego-batman-movie.jpg">
-                        <img src="images/posters/the-lego-batman-movie.jpg" title="The Lego Batman Movie" height=275px/></a>
-                    <figcaption>
-                        <em>The Lego Batman Movie</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/cars-3.png">
-                        <img src="images/posters/cars-3.png" title="Cars 3" height=275px/></a>
-                    <figcaption>
-                        <em>Cars 3</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/despicable-me-3.png">
-                        <img src="images/posters/despicable-me-3.png" title="Despicable Me 3" height=275px/></a>
-                    <figcaption>
-                        <em>Despciable Me 3</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/deadpool.jpg">
-                        <img src="images/posters/deadpool.jpg" title="Deadpool" height=275px/></a>
-                    <figcaption>
-                        <em>Deadpool</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <!--To give the idea there's more stuff-->
-                    <a href="images/poster-arrow-right.png">
-                        <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
-                </td>
-            </tr>
-            <tr>
-                <th>Horror</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="images/posters/it.jpg">
-                        <img src="images/posters/it.jpg" title="It" height=275px/></a>
-                    <figcaption>
-                        <em>It</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/life.jpg">
-                        <img src="images/posters/life.jpg" title="Life" height=275px/></a>
-                    <figcaption>
-                        <em>Life</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/alien-covenant.jpg">
-                        <img src="images/posters/alien-covenant.jpg" title="Alien: Covenant" height=275px/></a>
-                    <figcaption>
-                        <em>Alien: Covenant</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/annabelle-creation.jpg">
-                        <img src="images/posters/annabelle-creation.jpg" title="Annabelle: Creation" height=275px/></a>
-                    <figcaption>
-                        <em>Annabelle: Creation</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/get-out.jpg">
-                        <img src="images/posters/get-out.jpg" title="Get Out" height=275px/></a>
-                    <figcaption>
-                        <em>Get Out</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <!--To give the idea there's more stuff-->
-                    <a href="images/poster-arrow-right.png">
-                        <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
-                </td>
-            </tr>
-            <tr>
-                <th>Sci-Fi</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="images/posters/blade-runner-2049.jpg">
-                        <img src="images/posters/blade-runner-2049.jpg" title="Blade Runner 2049" height=275px/></a>
-                    <figcaption>
-                        <em>Blade Runner 2049</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/war-for-the-planet-of-the-apes.jpg">
-                        <img src="images/posters/war-for-the-planet-of-the-apes.jpg" title="War for the Planet of the Apes" height=275px/></a>
-                    <figcaption>
-                        <em>War for the Planet of the Apes</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/ghost-in-the-shell.jpg">
-                        <img src="images/posters/ghost-in-the-shell.jpg" title="Ghost in the Shell" height=275px/></a>
-                    <figcaption>
-                        <em>Ghost in the Shell</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/valerian.jpg">
-                        <img src="images/posters/valerian.jpg" title="Valerian and the City of a Thousand Planets" height=275px/></a>
-                    <figcaption>
-                        <em>Valerian</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/the-matrix.jpg">
-                        <img src="images/posters/the-matrix.jpg" title="The Matrix" height=275px/></a>
-                    <figcaption>
-                        <em>The Matrix</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <!--To give the idea there's more stuff-->
-                    <a href="images/poster-arrow-right.png">
-                        <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
-                </td>
-            </tr>
-            <tr>
-                <!--Pretty weak, could be replaced with another genre-->
-                <th>Historical</th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="images/posters/straight-outta-compton.jpg">
-                        <img src="images/posters/straight-outta-compton.jpg" title="Straight Outta Compton" height=275px/></a>
-                    <figcaption>
-                        <em>Straight Outta Compton</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/selma.jpg">
-                        <img src="images/posters/selma.jpg" title="Selma" height=275px/></a>
-                    <figcaption>
-                        <em>Selma</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/the-wolf-of-wall-street.jpg">
-                        <img src="images/posters/the-wolf-of-wall-street.jpg" title="The Wolf of Wall Street" height=275px/></a>
-                    <figcaption>
-                        <em>The Wolf of Wall Street</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/12-years-a-slave.jpg">
-                        <img src="images/posters/12-years-a-slave.jpg" title="12 Years a Slave" height=275px/></a>
-                    <figcaption>
-                        <em>12 Years a Slave</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <a href="images/posters/jobs.jpg">
-                        <img src="images/posters/jobs.jpg" title="Jobs" height=275px/></a>
-                    <figcaption>
-                        <em>Jobs</em>
-                    </figcaption>
-                </td>
-                <td>
-                    <!--To give the idea there's more stuff-->
-                    <a href="images/poster-arrow-right.png">
-                        <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
-                </td>
-            </tr>
-        </table>
+        <div class="parallax1">
+            <div class="title">
+                <span class="glass"><br><h1>GENRES</h1></span>
+            </div>
+        </div>
+        <div class="genre">
+            <h2>Action</h2>
+            <table>
+                <tr>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="images/posters/baby-driver.jpg">
+                            <img src="images/posters/baby-driver.jpg" title="Baby Driver" height=275px/></a>
+                        <figcaption>
+                            <em>Baby Driver</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/logan.jpg">
+                            <img src="images/posters/logan.jpg" title="Logan" height=275px/></a>
+                        <figcaption>
+                            <em>Logan</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/guardians-of-the-galaxy-vol-2.jpg">
+                            <img src="images/posters/guardians-of-the-galaxy-vol-2.jpg" title="Guardians of the Galaxy vol. 2" height=275px/></a>
+                        <figcaption>
+                            <em>Guardians of the Galaxy vol. 2</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/rogue-one.jpg">
+                            <img src="images/posters/rogue-one.jpg" title="Rogue One" height=275px/></a>
+                        <figcaption>
+                            <em>Rogue One</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/doctor-strange.jpg">
+                            <img src="images/posters/doctor-strange.jpg" title="Doctor Strange" height=275px/></a>
+                        <figcaption>
+                            <em>Doctor Strange</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <!--To give the idea there's more stuff-->
+                        <a href="images/poster-arrow-right.png">
+                            <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="https://www.netflix.com/title/80108239"><img src="images/netflix.png" width=190></a></td>
+                    <td><a href="https://www.netflix.com/title/80108237"><img src="images/netflix.png" width=190></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="parallax2">
+        </div>
+        <div class="genre">
+            <h2>Comedy</h2>
+            <table>
+                <tr>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/fresh.png" height=32px></td>
+                    <td><img src="images/fresh.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="images/posters/logan-lucky.jpg">
+                            <img src="images/posters/logan-lucky.jpg" title="Logan Lucky" height=275px/></a>
+                        <figcaption>
+                            <em>Logan Lucky</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/the-lego-batman-movie.jpg">
+                            <img src="images/posters/the-lego-batman-movie.jpg" title="The Lego Batman Movie" height=275px/></a>
+                        <figcaption>
+                            <em>The Lego Batman Movie</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/cars-3.png">
+                            <img src="images/posters/cars-3.png" title="Cars 3" height=275px/></a>
+                        <figcaption>
+                            <em>Cars 3</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/despicable-me-3.png">
+                            <img src="images/posters/despicable-me-3.png" title="Despicable Me 3" height=275px/></a>
+                        <figcaption>
+                            <em>Despciable Me 3</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/deadpool.jpg">
+                            <img src="images/posters/deadpool.jpg" title="Deadpool" height=275px/></a>
+                        <figcaption>
+                            <em>Deadpool</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <!--To give the idea there's more stuff-->
+                        <a href="images/poster-arrow-right.png">
+                            <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="parallax2">
+        </div>
+        <div class="genre">
+            <h2>Horror</h2>
+            <table>
+                <tr>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/fresh.png" height=32px></td>
+                    <td><img src="images/fresh.png" height=32px></td>
+                    <td><img src="images/fresh.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="images/posters/it.jpg">
+                            <img src="images/posters/it.jpg" title="It" height=275px/></a>
+                        <figcaption>
+                            <em>It</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/life.jpg">
+                            <img src="images/posters/life.jpg" title="Life" height=275px/></a>
+                        <figcaption>
+                            <em>Life</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/alien-covenant.jpg">
+                            <img src="images/posters/alien-covenant.jpg" title="Alien: Covenant" height=275px/></a>
+                        <figcaption>
+                            <em>Alien: Covenant</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/annabelle-creation.jpg">
+                            <img src="images/posters/annabelle-creation.jpg" title="Annabelle: Creation" height=275px/></a>
+                        <figcaption>
+                            <em>Annabelle: Creation</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/get-out.jpg">
+                            <img src="images/posters/get-out.jpg" title="Get Out" height=275px/></a>
+                        <figcaption>
+                            <em>Get Out</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <!--To give the idea there's more stuff-->
+                        <a href="images/poster-arrow-right.png">
+                            <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="parallax2">
+        </div>
+        <div class="genre">
+            <h2>Sci-Fi</h2>
+            <table>
+                <tr>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                    <td><img src="images/rotten.png" height=32px></td>
+                    <td><img src="images/rotten.png" height=32px></td>
+                    <td><img src="images/certified.png" height=32px></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="images/posters/blade-runner-2049.jpg">
+                            <img src="images/posters/blade-runner-2049.jpg" title="Blade Runner 2049" height=275px/></a>
+                        <figcaption>
+                            <em>Blade Runner 2049</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/war-for-the-planet-of-the-apes.jpg">
+                            <img src="images/posters/war-for-the-planet-of-the-apes.jpg" title="War for the Planet of the Apes" height=275px/></a>
+                        <figcaption>
+                            <em>War for the Planet of the Apes</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/ghost-in-the-shell.jpg">
+                            <img src="images/posters/ghost-in-the-shell.jpg" title="Ghost in the Shell" height=275px/></a>
+                        <figcaption>
+                            <em>Ghost in the Shell</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/valerian.jpg">
+                            <img src="images/posters/valerian.jpg" title="Valerian and the City of a Thousand Planets" height=275px/></a>
+                        <figcaption>
+                            <em>Valerian</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/the-matrix.jpg">
+                            <img src="images/posters/the-matrix.jpg" title="The Matrix" height=275px/></a>
+                        <figcaption>
+                            <em>The Matrix</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <!--To give the idea there's more stuff-->
+                        <a href="images/poster-arrow-right.png">
+                            <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="https://www.netflix.com/title/20557937"><img src="images/netflix.png" width=190></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="parallax2">
+        </div>
+        <div class="genre">
+            <h2>Historical</h2>
+            <table>
+                <tr>
+                    <td>
+                        <a href="images/posters/straight-outta-compton.jpg">
+                            <img src="images/posters/straight-outta-compton.jpg" title="Straight Outta Compton" height=275px/></a>
+                        <figcaption>
+                            <em>Straight Outta Compton</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/selma.jpg">
+                            <img src="images/posters/selma.jpg" title="Selma" height=275px/></a>
+                        <figcaption>
+                            <em>Selma</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/the-wolf-of-wall-street.jpg">
+                            <img src="images/posters/the-wolf-of-wall-street.jpg" title="The Wolf of Wall Street" height=275px/></a>
+                        <figcaption>
+                            <em>The Wolf of Wall Street</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/12-years-a-slave.jpg">
+                            <img src="images/posters/12-years-a-slave.jpg" title="12 Years a Slave" height=275px/></a>
+                        <figcaption>
+                            <em>12 Years a Slave</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <a href="images/posters/jobs.jpg">
+                            <img src="images/posters/jobs.jpg" title="Jobs" height=275px/></a>
+                        <figcaption>
+                            <em>Jobs</em>
+                        </figcaption>
+                    </td>
+                    <td>
+                        <!--To give the idea there's more stuff-->
+                        <a href="images/poster-arrow-right.png">
+                            <img src="images/poster-arrow-right.png" title="See more" height=275px/></a> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="parallax1">
+        </div>
     </body>
 </html>
