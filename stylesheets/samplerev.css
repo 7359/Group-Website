@@ -1,0 +1,37 @@
+.title{
+    top:375px;
+}
+.parallax1{
+    background-image: url(images/samplerev-parallax1.jpg);
+    height: 51.5%;
+}
+.review{
+    text-align: justify;
+    color: black;
+    letter-spacing: normal;
+    padding: 10px 100px 50px 100px;
+    font: 400 15px/1.8 "Lato", sans-serif;    
+}
+.scrollBox{
+    padding-bottom: 22px;
+}
+.sidebar{
+    height:1426px;
+}
+.sideitem{
+    font-size: 16px;
+    color: #bbb;
+    padding:8px 16px;
+    float:left;
+    text-align: center;
+    width:auto;
+    border:none;
+    outline:none;
+    display:block;
+    background-color:#111;
+
+}
+.sideitem:hover{
+    background-color:#222;
+
+}

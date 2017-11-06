@@ -1,0 +1,121 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font: 400 20px/1.8 "Helvetica", sans-serif;
+    color: #777;
+    background-color: floralwhite;
+}
+a:link{
+    text-decoration: none;
+    color: #e5951d;
+}
+h2{
+    text-transform: uppercase;
+}
+.container{
+    background-color: #111;
+    display:inline-block;
+    float:left;
+}
+.parallax1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.readmore{
+    color:#043870;
+}
+.readmore:hover{
+    color:#05478e;
+}
+.scrollBox{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 335px;
+    white-space: nowrap;
+}
+.sidebar{
+    top:66.5%;
+    height:146.5%;
+    width:230px;
+    right: 0;
+    text-align: center;
+    font-size: 25px;
+    color: #777;
+    background-color:#111;
+    position:absolute;z-index:1;overflow:auto
+}
+.tagcard{
+    text-align: center;
+    background-color: transparent;
+    font-family: "Arial Black";
+}
+.tagcard span.border{
+    background-color: #e8ae27;
+    color: #111;
+    padding: 10px 10px 10px 10px;  
+    font-size: 12px;
+    letter-spacing: normal;
+}
+.tagcard span.border:hover{
+    background-color: #b78819;
+}
+.titlebar{
+    background-color: #111;
+    position: absolute;
+    text-align: center;
+    top: 12%;
+    width:100%;
+}
+.titlebar span.border {
+    background-color: #222;
+    color: #eee;
+    padding: 15px 18px 15px 18px;  
+    font-size: 17px;
+    letter-spacing: normal;
+}
+.titlebar span.border:hover{
+    background-color: #111;
+}
+.title{
+    background-color: rgba(50, 50, 50, 0.6);
+    text-align: center;
+    position:absolute;
+    width: 100%;
+    font-family: "Trebuchet MS";
+}
+.title span.glass{
+    background-color: transparent;
+    color: #ddd;
+    padding: 0px 18px 0px 18px;  
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.titlecard{
+    text-align: center;
+    background-color: #111;
+    padding-top: 15px;
+}
+.titlecard span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 0px 18px 18px 18px;  
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.topbar{
+    background-image: url(../images/samplerev-topbar.jpg);
+    min-height: 15%;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.scrollContainer{
+    height=335px;
+    width=1800px;
+    display: inline-block;
+}
+.text{
+    margin-right: 230px;
+}

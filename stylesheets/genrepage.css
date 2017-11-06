@@ -1,0 +1,59 @@
+table{
+    width: 100%;
+}
+td{
+    width: 190px;
+    text-align: center;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.title{
+    bottom:273px;
+}
+.parallax1{
+    background-image: url(../images/theater-seats.jpg);
+    height: 555px;
+}
+.parallax2{
+    background-image: url(../images/theater-seats.jpg);
+    height: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.genre{
+    background-color:#111;
+    text-align: justify;
+    color: #ddd;
+    letter-spacing: normal;
+    padding: 10px 100px 50px 100px;
+    font: 400 25px/1.8 "Lato", sans-serif;    
+}
+.barItem{
+    width: 16%;
+    background-color:#111;
+    color:#ddd;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    display:inline-block;
+}
+.barItem:hover{
+    background-color:#222;
+}
+.sideitem{
+    font-size: 16px;
+    color: #bbb;
+    padding:8px 16px;
+    float:left;
+    text-align: center;
+    width:auto;
+    border:none;
+    outline:none;
+    display:block;
+    background-color:#111;
+}
+.sideitem:hover{
+    background-color:#222;
+}
