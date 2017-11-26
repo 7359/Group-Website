@@ -112,8 +112,8 @@ h2{
     background-size: cover;
 }
 .scrollContainer{
-    height=335px;
-    width=1800px;
+    height:335px;
+    width:1800px;
     display: inline-block;
 }
 .text{
