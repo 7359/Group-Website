@@ -57,3 +57,9 @@ td{
 .sideitem:hover{
     background-color:#222;
 }
+
+@media only screen and (min-width:400px) and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 400px) {
+}
