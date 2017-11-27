@@ -1,9 +1,13 @@
 .title{
-    top:375px;
+    top:21%;
 }
 .parallax1{
-    background-image: url(images/samplerev-parallax1.jpg);
+    background-image: url(../images/samplerev-parallax1.jpg);
     height: 51.5%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 .review{
     text-align: justify;
@@ -13,10 +17,14 @@
     font: 400 15px/1.8 "Lato", sans-serif;    
 }
 .scrollBox{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 335px;
+    white-space: nowrap;
     padding-bottom: 22px;
 }
 .sidebar{
-    height:1426px;
+    height:200%;
 }
 .sideitem{
     font-size: 16px;
