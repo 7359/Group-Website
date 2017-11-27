@@ -43,3 +43,23 @@
     background-color:#222;
 
 }
+
+@media only screen and (min-width:400px) and (max-width: 800px) {
+    .titlebar span.border {
+    background-color: #222;
+    color: #eee;
+    padding: 12px 6px 12px 6px;  
+    font-size: 14px;
+    letter-spacing: normal;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .titlebar span.border {
+    background-color: #222;
+    color: #eee;
+    padding: 10px 3px 10px 3px;  
+    font-size: 11px;
+    letter-spacing: normal;
+    }
+}
