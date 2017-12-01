@@ -58,6 +58,10 @@ td{
     background-color:#222;
 }
 
+button{
+    backround-color:inherit;
+    border:inherit;
+
 @media only screen and (min-width:400px) and (max-width: 800px) {
     .genre{
     background-color:#111;
