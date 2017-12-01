@@ -9,11 +9,11 @@ td{
     padding-right: 20px;
 }
 .title{
-    bottom:273px;
+    bottom:20%;
 }
 .parallax1{
     background-image: url(../images/theater-seats.jpg);
-    height: 555px;
+    height: 70%;
 }
 .parallax2{
     background-image: url(../images/theater-seats.jpg);
