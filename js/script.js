@@ -39,5 +39,5 @@ function rollImages(button){
 	    i=0;
 	}
     }
-    images[i].style.display="block";//And turn on the first inactive one
+    images[i].style.display="initial";//And turn on the first inactive one
 }
