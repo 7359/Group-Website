@@ -19,13 +19,37 @@
         <br>
         <p> &nbsp;&nbsp; If you have any questions or concerns, please feel free to contact us at 201-555-5000.</p>
 
-        <form action="/action_page.php" style="margin-left: 20px">
+         <form name="main" action="/action_page.php" style="margin-left: 20px" onsubmit="return nameValidation()" method="post">
 
-            <label for="fname">First Name</label>
+            <label for="fname">First Name:</label>
             <input type="text" id="fname" name="firstname" placeholder="First Name"><br>
 
-            <label for="lname">Last Name</label>
+            <label for="lname">Last Name:</label>
             <input type="text" id="lname" name="lastname" placeholder="Last Name"><br>
+            
+            <label for="favGenre">What Is Your Favorite Genre:</label>
+            <select name = "Genre">
+                <option value = "Action">Action</option>
+                <option value = "Horror">Horror</option>
+                <option value = "Comedy">Comedy</option>
+                <option value = "Sci-Fi">Sci-Fi</option>
+                <option value = "Historical">Historical</option>
+            </select>
+            <br>
+          
+            <label for="Rating">Rate How Helpful This Website Has Been:</label><br>
+            <input type="radio" value="0">0(Not Helpful)
+            <input type="radio" value="1">1
+            <input type="radio" value="2">2
+            <input type="radio" value="3">3
+            <input type="radio" value="4">4
+            <input type="radio" value="5">5
+            <input type="radio" value="6">6
+            <input type="radio" value="7">7
+            <input type="radio" value="8">8
+            <input type="radio" value="8">9
+            <input type="radio" value="10">10(Very Helpful)
+            
             <br>
             <label for="subject">Comment</label><br>
             <textarea id="comment" name="comment" placeholder="Tell Us"></textarea><br>
