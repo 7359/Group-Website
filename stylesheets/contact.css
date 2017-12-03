@@ -45,6 +45,10 @@
 .barItem:hover{
     background-color:#222;
 }
+form {
+    background-color: beige; 
+    padding: 10px 0px 0px 25px;
+}
 textarea{
     width: 700px;
     height: 300px;
@@ -56,6 +60,10 @@ textarea{
     padding: 12px 6px 12px 6px;  
     font-size: 14px;
     letter-spacing: normal;
+    }
+    form {
+    background-color: beige; 
+    padding: 10px 0px 0px 25px;
     }
     textarea{
     width: 400px;
@@ -70,6 +78,10 @@ textarea{
     padding: 10px 3px 10px 3px;  
     font-size: 11px;
     letter-spacing: normal;
+    }
+    form {
+    background-color: beige; 
+    padding: 10px 0px 0px 25px;
     }
     textarea{
     width: 200px;
