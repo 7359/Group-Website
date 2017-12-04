@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Free Popcorn - Contact Us</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" href="stylesheets/main.css"/>
+        <link rel="stylesheet" href="stylesheets/upcoming.css"/>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="titlebar">
+                <a href="index.html"><span class="border">Home</span></a><a href="genrepage.html"><span class="border">Genres</span></a><a href="netflix.html"><span class="border">This Week on Netflix</span></a><a href="index.html"><span class="border">Upcoming Movies</span></a><a href="contact.html"><span class="border">Contact Us</span></a>
+            </div>
+        </div>
+        <br>
+        <div class="main">
+            <table border="0" align="center">
+                <tr>
+                    <td align="center" ><img src="images/posters/infinity-war.jpg" height="275px" id="infinityWars"> <br><h3>Avengers: Infinity War<br>(May 2018)</h3><br>
+                    </td>
+                    <td>
+                        <h6>
+                                                        An unprecedented cinematic journey ten years in the making and spanning the entire Marvel Cinematic Universe, Marvel Studios' "Avengers: Infinity War" brings to the screen the ultimate, deadliest showdown of all time. The Avengers and their Super Hero allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.
+                        </h6>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"  id="Jumanji"><img src="images/posters/jumanji.jpg" height="275">
+                    <br><h3>Jumanji: Welcome to the Jungle (December 2017)</h3>
+                    </td>
+                    <td>
+                        <h6>
+                            When four high-school kids discover an old video game console with a game they've never heard of--Jumanji--they are immediately drawn into the game's jungle setting, literally becoming the avatars they chose: gamer Spencer becomes a brawny adventurer (Dwayne Johnson); football jock Fridge loses (in his words) "the top two feet of his body" and becomes an Einstein (Kevin Hart); popular girl Bethany becomes a middle-aged male professor (Jack Black); and wallflower Martha becomes a badass warrior (Karen Gillan). What they discover is that you don't just play Jumanji--you must survive it.
+                        </h6>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>
