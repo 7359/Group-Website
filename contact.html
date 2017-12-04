@@ -1,173 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Contact Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Free Popcorn - Contact Us</title>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <style>
-            a:link{
-                text-decoration: none;
-                color: #e5951d;
-            }
-            .readmore{
-                color:#043870;
-            }
-            .readmore:hover{
-                color:#05478e;
-            }
-            body, html{
-                height: 100%;
-                margin: 0;
-                font: 400 20px/1.8 "Helvetica", sans-serif;
-                color: #777;
-                background-color: floralwhite;
-            }
-            h2{
-                text-transform: uppercase;
-            }
-            .topbar{
-                background-image: url(images/samplerev-topbar.jpg);
-                min-height: 15%;
-                background-position: center;
-                background-repeat:no-repeat;
-                background-size: cover;
-            }
-            .titlebar{
-                background-color: #111;
-                position: absolute;
-                text-align: center;
-                top: 12%;
-                width:100%;
-            }
-            .titlecard{
-                text-align: center;
-                background-color: #111;
-                padding-top: 15px;
-            }
-            .title{
-                background-color: rgba(50, 50, 50, 0.6);
-                text-align: center;
-                position:absolute;
-                top:39%;
-                width: 100%;
-                font-family: "Trebuchet MS";
-            }
-            .title span.glass{
-                background-color: transparent;
-                color: #ddd;
-                padding: 0px 18px 0px 18px;  
-                font-size: 25px;
-                letter-spacing: 5px;
-            }
-            .titlecard span.border {
-                background-color: #111;
-                color: #fff;
-                padding: 0px 18px 18px 18px;  
-                font-size: 25px;
-                letter-spacing: 5px;
-            }
-            .tagcard{
-                text-align: center;
-                background-color: transparent;
-                font-family: "Arial Black";
-            }
-            .tagcard span.border {
-                background-color: #e8ae27;
-                color: #111;
-                padding: 10px 10px 10px 10px;  
-                font-size: 12px;
-                letter-spacing: normal;
-            }
-            .tagcard span.border:hover{
-                background-color: #b78819;
-            }
-            .titlebar span.border {
-                background-color: #222;
-                color: #eee;
-                padding: 15px 18px 15px 18px;  
-                font-size: 17px;
-                letter-spacing: normal;
-            }
-            .titlebar span.border:hover{
-                background-color: #111;
-            }
-            .parallax1{
-                background-image: url(images/161764433_hi-res.jpg);
-                height: 125.5%;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat:no-repeat;
-                background-size: cover;
-            }
-            .review{
-
-                text-align: justify;
-                letter-spacing: normal;
-                padding: 10px 100px 20px 100px;
-                font: 400 15px/1.8 "Lato", sans-serif;    
-            }
-            .scrollContainer{
-                height=335px;
-                width=1800px;
-                display: inline-block;
-            }
-            .container{
-                background-color: #111;
-                display:inline-block;
-                float:left;
-            }
-            .scrollBox{
-                overflow-x: scroll;
-                overflow-y: hidden;
-                height: 335px;
-                white-space: nowrap;
-                padding-bottom: 22px;
-            }
-            .sidebar{
-                top:66.5%;
-                height:146.5%;
-                width:230px;
-                right: 0;
-                text-align: center;
-                font-size: 25px;
-                color: #777;
-                background-color:#111;
-                position:absolute;z-index:1;overflow:auto
-            }
-            .sideitem{
-                position:absolute;
-                top:330px;
-                right:0;
-                font-size: 16px;
-                height: 520px;
-                text-align: center;
-                width:60%;
-                padding-bottom: 10px;
-                border:none;
-                outline:none;
-                overflow: hidden;
-                display:inline-block;
-                background-color: rgba(220, 220, 220, 0.7);;
-                color: #222;
-            }
-            .text{
-                margin-right: 230px;
-            }
-            .barItem{
-                position:absolute;
-                top: 330px;
-                left: 0;
-                width: 40%;
-                background-color:#111;
-                color:#ddd;
-                text-align: center;
-                padding-bottom: 10px;
-                display:inline-block;
-                height: 520px;
-            }
-            .barItem:hover{
-                background-color:#222;
-            }
-        </style>
+        <link rel="stylesheet" href="stylesheets/main.css"/>
+        <link rel="stylesheet" href="stylesheets/contact.css"/>
     </head>
     <body>
         <div class="topbar">
@@ -181,16 +19,40 @@
         <br>
         <p> &nbsp;&nbsp; If you have any questions or concerns, please feel free to contact us at 201-555-5000.</p>
 
-        <form action="/action_page.php" style="margin-left: 20px">
+         <form name="main" action="/action_page.php" style="margin-left: 20px" onsubmit="return nameValidation()" method="post">
 
-            <label for="fname">First Name</label>
+            <label for="fname">First Name:</label>
             <input type="text" id="fname" name="firstname" placeholder="First Name"><br>
 
-            <label for="lname">Last Name</label>
+            <label for="lname">Last Name:</label>
             <input type="text" id="lname" name="lastname" placeholder="Last Name"><br>
+            
+            <label for="favGenre">What Is Your Favorite Genre:</label>
+            <select name = "Genre">
+                <option value = "Action">Action</option>
+                <option value = "Horror">Horror</option>
+                <option value = "Comedy">Comedy</option>
+                <option value = "Sci-Fi">Sci-Fi</option>
+                <option value = "Historical">Historical</option>
+            </select>
+            <br>
+          
+            <label for="Rating">Rate How Helpful This Website Has Been:</label><br>
+            <input type="radio" value="0">0(Not Helpful)
+            <input type="radio" value="1">1
+            <input type="radio" value="2">2
+            <input type="radio" value="3">3
+            <input type="radio" value="4">4
+            <input type="radio" value="5">5
+            <input type="radio" value="6">6
+            <input type="radio" value="7">7
+            <input type="radio" value="8">8
+            <input type="radio" value="8">9
+            <input type="radio" value="10">10(Very Helpful)
+            
             <br>
             <label for="subject">Comment</label><br>
-            <textarea id="comment" name="comment" placeholder="Tell Us" style="height:200px;width:700px"></textarea><br>
+            <textarea id="comment" name="comment" placeholder="Tell Us"></textarea><br>
 
             <input type="submit" value="Submit">
 

@@ -1,190 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Free Popcorn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Free Popcorn - Genres</title>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <style>
-            table{
-                width: 100%;
-            }
-
-            td{
-                width: 190px;
-                text-align: center;
-                vertical-align: top;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            a:link{
-                text-decoration: none;
-            }
-
-            body, html{
-                height: 100%;
-                margin: 0;
-                font: 400 14px/1.8 "Helvetica", sans-serif;
-                color: #777;
-                background-color:#111;
-            }
-
-            h2{
-                text-transform: uppercase;
-            }
-
-            .topbar{
-                background-image: url(images/samplerev-topbar.jpg);
-                min-height: 15%;
-                background-position: center;
-                background-repeat:no-repeat;
-                background-size: cover;
-            }
-            .titlebar{
-                background-color: #111;
-                position: absolute;
-                text-align: center;
-                top: 12%;
-                width:100%;
-            }
-
-            .titlecard{
-                text-align: center;
-                background-color: #111;
-                padding-top: 15px;
-            }
-
-            .title{
-                background-color: rgba(50, 50, 50, 0.6);
-                text-align: center;
-                position:absolute;
-                bottom:273px;
-                width: 100%;
-                font-family: "Trebuchet MS";
-            }
-
-            .title span.glass{
-                background-color: transparent;
-                color: #ddd;
-                padding: 0px 18px 0px 18px;  
-                font-size: 25px;
-                letter-spacing: 5px;
-            }
-
-            .titlecard span.border {
-                background-color: #111;
-                color: #fff;
-                padding: 0px 18px 18px 18px;  
-                font-size: 25px;
-                letter-spacing: 5px;
-            }
-
-            .tagcard{
-                text-align: center;
-                background-color: transparent;
-                font-family: "Arial Black";
-            }
-
-            .tagcard span.border {
-                background-color: #e8ae27;
-                color: #111;
-                padding: 10px 10px 10px 10px;  
-                font-size: 12px;
-                letter-spacing: normal;
-            }
-
-            .tagcard span.border:hover{
-                background-color: #b78819;
-            }
-
-            .titlebar span.border {
-                background-color: #222;
-                color: #eee;
-                padding: 15px 18px 15px 18px;  
-                font-size: 17px;
-                letter-spacing: normal;
-            }
-
-            .titlebar span.border:hover{
-                background-color: #111;
-            }
-
-            .parallax1{
-                background-image: url(images/theater-seats.jpg);
-                height: 555px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat:no-repeat;
-                background-size: cover;
-            }
-            .parallax2{
-                background-image: url(images/theater-seats.jpg);
-                height: 50px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat:no-repeat;
-                background-size: cover;
-            }
-            .genre{
-                background-color:#111;
-                text-align: justify;
-                color: #ddd;
-                letter-spacing: normal;
-                padding: 10px 100px 50px 100px;
-                font: 400 25px/1.8 "Lato", sans-serif;    
-            }
-
-            .scrollContainer{
-                height=335px;
-                width=1800px;
-                display: inline-block;
-            }
-
-            .scrollBox{
-                overflow-x: scroll;
-                overflow-y: hidden;
-                height: 335px;
-                white-space: nowrap;
-            }
-            .barItem{
-                width: 16%;
-                background-color:#111;
-                color:#ddd;
-                text-align: center;
-                padding: 15px 0px 15px 0px;
-                display:inline-block;
-            }
-            .barItem:hover{
-                background-color:#222;
-            }
-            .sidebar{
-                top:66.5%;
-                height:146.5%;
-                width:230px;
-                right: 0;
-                text-align: center;
-                font-size: 25px;
-                color: #777;
-                background-color:#111;
-                position:absolute;z-index:1;overflow:auto
-            }
-            .sideitem{
-                font-size: 16px;
-                color: #bbb;
-                padding:8px 16px;
-                float:left;
-                text-align: center;
-                width:auto;
-                border:none;
-                outline:none;
-                display:block
-                    background-color:#111;
-
-            }
-            .sideitem:hover{
-                background-color:#222;
-
-            }
-        </style>
+        <link rel="stylesheet" href="stylesheets/main.css"/>
+        <link rel="stylesheet" href="stylesheets/genrepage.css"/>
+	<script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <div class="topbar">
@@ -201,7 +23,7 @@
             <h2> Action</h2>
             <a href="samplerev.html">
                 <div class="barItem">
-                    <img src="images/samplerev-parallax1.jpg" title="The Avengers" height=275px/>
+                    <img src="images/posters/the-avengers.jpg" title="The Avengers" height=275px/>
                     <h3>The Avengers</h3><img src="images/certified.png" height=29px> 
                 </div>
             </a>
@@ -223,19 +45,19 @@
                     <h3>Rogue One</h3><img src="images/certified.png" height=29px> &nbsp;&nbsp;&nbsp; <img src="https://orig00.deviantart.net/2074/f/2016/352/e/b/netflix_honeycomb_icon_by_roxor470-das00oc.png" height=33px>
                 </div>
             </a>
-            <a href="">
+            <a href="" style="display:none">
                 <div class="barItem">
                     <img src="images/posters/doctor-strange.jpg" title="Doctor Strange" height=275px/>
                     <h3>Doctor Strange</h3><img src="images/certified.png" height=29px> &nbsp;&nbsp;&nbsp; <img src="https://orig00.deviantart.net/2074/f/2016/352/e/b/netflix_honeycomb_icon_by_roxor470-das00oc.png" height=33px>
                 </div>
             </a>
-            <a href="">
+            <button onclick=rollImages(this)>
                 <div class="barItem">
                     <img src="images/poster-arrow-right.png" title="See More" height=275px/>
                     <h3>See More</h3>
                     <br>
                 </div>
-            </a>
+            </button>
         </div>
         <div class="parallax2">
         </div>
