@@ -38,6 +38,7 @@ td{
     text-align: center;
     padding: 15px 0px 15px 0px;
     display:inline-block;
+    cursor: pointer;
 }
 .barItem:hover{
     background-color:#222;
