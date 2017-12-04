@@ -23,13 +23,23 @@ td{
     background-repeat:no-repeat;
     background-size: cover;
 }
+.genrelist{
+    background-color:#111;
+    text-align: justify;
+    color: #ddd;
+    letter-spacing: normal;
+    padding: 10px 100px 50px 100px;
+    font: 400 25px/1.8 "Lato", sans-serif;
+}
 .genre{
     background-color:#111;
     text-align: justify;
     color: #ddd;
     letter-spacing: normal;
     padding: 10px 100px 50px 100px;
-    font: 400 25px/1.8 "Lato", sans-serif;    
+    font: 400 25px/1.8 "Lato", sans-serif;
+    
+    overflow-x: hidden;
 }
 .barItem{
     width: 16%;
@@ -38,6 +48,7 @@ td{
     text-align: center;
     padding: 15px 0px 15px 0px;
     display:inline-block;
+    
     cursor: pointer;
 }
 .barItem:hover{
