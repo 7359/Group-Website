@@ -4,7 +4,12 @@
 */
 function rollImages(button){
     //May behave oddly if not all initial active items are consecutive
-    var source=button.parentElement;
+    var source=button.target.parentElement;
+    //Annoyingly, the event can come from anything inside the one with the event listenter
+    //Always need to go back all the way to the genre div
+    while(!source.classList.contains("genre")){
+	source=source.parentElement;
+    }
     var children=source.childNodes;
     var images=[];
     for(var i=0; i<children.length; i++){
@@ -40,4 +45,8 @@ function rollImages(button){
 	}
     }
     images[i].style.display="initial";//And turn on the first inactive one
+}
+var seemore=document.getElementsByClassName('seemore');
+for(var i=0; i<seemore.length; i++){
+    seemore[i].addEventListener('click', rollImages, false);
 }
