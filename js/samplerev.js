@@ -6,8 +6,8 @@ var tooltip = document.createElement("DIV");
 
 function createTooltip(event){
     
-    var mouseX = event.clientX + 5;
-    var mouseY = event.clientY + 5;
+    var mouseX = event.clientX + 5 + window.scrollX;
+    var mouseY = event.clientY + 5 + window.scrollY;
     
     if(event.target.innerHTML=="ACTION"){
         tooltip.innerHTML = "Guns, punches and explosions!!!!!1!!!";    
