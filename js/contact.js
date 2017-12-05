@@ -11,8 +11,9 @@ function nameValidation() {
     var thanks = document.createElement("H1");
     thanks.style.textAlign = "center";
     thanks.style.verticalAlign = "center";
-    thanks.innerHTML = "Thank you for your feedback.<br><br>We appreciate your support.";
-    
+    thanks.innerHTML = "Thank you for your feedback.<br><hr>We appreciate your support.";
+    var feedback = document.createElements("DIV");
+    feedback.style.color = "red";
     document.getElementById("contact").innerHTML = "<br><br><br>";
     document.getElementById("contact").appendChild(thanks);
 }

@@ -11,6 +11,9 @@ td{
 .title{
     bottom:20%;
 }
+.title h1{
+    font-size: 72px;
+}
 .parallax1{
     background-image: url(../images/theater-seats.jpg);
     height: 70%;

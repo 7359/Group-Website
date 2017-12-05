@@ -10,9 +10,14 @@ td{
 }
 .title{
     bottom:20%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.desc{
+    color: darkred;
+    font-size: 48px;
 }
 .parallax1{
-    background-image: url(../images/theater-seats.jpg);
+    background-image: url(../images/netflix-wallpaper-0.jpg);
     height: 70%;
 }
 .parallax2{
@@ -24,7 +29,7 @@ td{
     background-size: cover;
 }
 .genre{
-    background-color:#111;
+    background-color:#411;
     text-align: justify;
     color: #ddd;
     letter-spacing: normal;
@@ -33,7 +38,7 @@ td{
 }
 .barItem{
     width: 16%;
-    background-color:#111;
+    background-color:#411;
     color:#ddd;
     text-align: center;
     padding: 15px 0px 15px 0px;
@@ -41,7 +46,7 @@ td{
     cursor: pointer;
 }
 .barItem:hover{
-    background-color:#222;
+    background-color:#522;
 }
 .sideitem{
     font-size: 16px;
