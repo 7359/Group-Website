@@ -30,6 +30,7 @@ td{
     letter-spacing: normal;
     padding: 10px 100px 50px 100px;
     font: 400 25px/1.8 "Lato", sans-serif;
+    font-weight: bold;
 }
 .genre{
     background-color:#111;
@@ -38,7 +39,6 @@ td{
     letter-spacing: normal;
     padding: 10px 100px 50px 100px;
     font: 400 25px/1.8 "Lato", sans-serif;
-    
     overflow-x: hidden;
 }
 .barItem{
