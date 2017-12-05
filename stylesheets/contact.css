@@ -75,7 +75,7 @@ textarea{
 form {
     background-color: beige; 
     padding: 10px 0px 0px 25px;
-    
+    margin-left: 20px;
 }
 textarea{
     width: 700px;

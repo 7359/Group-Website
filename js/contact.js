@@ -1,5 +1,8 @@
+
+document.getElementsByName("main")[0].addEventListener("submit", nameValidation);
+
 document.getElementById("comment").style.width = "250";
-function nameValidation() {
+function nameValidation(event) {
     if (document.forms["main"]["name"].value == "") {
         alert("Please fill out your name.");
         return false;
