@@ -1,18 +1,54 @@
 table {
-    width: 700px;  
+    width: 40%;  
     height: 500px; 
     background-color: black; 
-    padding: 20px 20px; 
-    
-    
+    padding: 20px 20px;    
 }
 h3 {
     color: whitesmoke; 
-   
 }
 
 h6{
     color: whitesmoke; 
     text-align: center; 
-    padding: 60px
+    padding: 3%;
+}
+.parallax1 {
+    background-image: url(../images/161764433_hi-res.jpg);
+    height: 125.5%;
+}
+img {
+    height: 275px;
+}
+@media only screen and (min-width:400px) and (max-width: 800px) {
+    .parallax1 {
+        height: 140%;
+    }
+    img {
+        height: 150px;
+    }
+    table {
+        width: 80%;
+    }
+    h3 {
+        font-size: 12pt;
+    }
+}
+@media only screen and (max-width: 400px) {
+    table {
+        padding: 10px 10px;
+        width: 85%
+    }
+    .parallax1 {
+        height: 140%;
+    }
+    h3 {
+        font-size: 12pt;
+    }
+    img {
+        height: 100px;
+    }
+    h6 {
+        font-size: 9pt;
+    }
 }
