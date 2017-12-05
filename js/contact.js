@@ -22,11 +22,11 @@ function nameValidation() {
             rating = radioButtons[i].value;
         }
     }
-    HTMLstring += "<h3>"+document.getElementById("name").value;
+    HTMLstring += "<h6>"+document.getElementById("name").value;
     if(document.getElementById("genre").value != "What's your favorite genre?"){
         HTMLstring += ", whose favorite genre is "+document.getElementById("genre").value + ",";
     }
-    HTMLstring += " says: </h3>" + document.getElementById("comment").value;
+    HTMLstring += " says: </h6>" + document.getElementById("comment").value;
     HTMLstring += "<h1>"+rating+" out of 10</h1>";
     feedback.style.fontSize = "26px";
     feedback.innerHTML = HTMLstring;
