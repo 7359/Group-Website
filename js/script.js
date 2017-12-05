@@ -47,12 +47,6 @@ function addItem(genre, imgSrc, title, seeMore){
         document.getElementById(genre).appendChild(item);
     }
 }
-createGenre("FUCKHEAD");
-addItem("FUCKHEAD", "images/posters/the-avengers.jpg", "The Fucking Avengers", false);
-addItem("FUCKHEAD", "images/posters/the-avengers.jpg", "The Fucking Avengers", false);
-addItem("FUCKHEAD", "images/posters/the-avengers.jpg", "The Fucking Avengers", false);
-addItem("FUCKHEAD", "images/posters/the-avengers.jpg", "The Fucking Avengers", false);
-addItem("FUCKHEAD", "images/posters/the-avengers.jpg", "The Fucking Avengers", false);
 function rollImages(button){
     //May behave oddly if not all initial active items are consecutive
     var targ=button.target;
@@ -70,18 +64,40 @@ function rollImages(button){
     }
     var imageSrcs = [];
     var imageTitles = [];
+    var additional = [];
     for(var i=0; i<images.length; i++){
         imageTitles.push(images[i].getElementsByTagName("IMG")[0].title);
         imageSrcs.push(images[i].getElementsByTagName("IMG")[0].src);
+        additional.push(images[i].getElementsByTagName("SPAN")[0].getElementsByTagName("IMG"));
     }
     for(var i=0; i<images.length; i++){
         if(i+1==images.length){
-            images[i].getElementsByTagName("SPAN")[0].innerHTML = "<h4>"+imageTitles[0]+"</h4>";
+            var replacementHTML = "";
+            replacementHTML += "<h6>"+imageTitles[0]+"</h6>";
+            for(var j=0;j<additional[0].length;j++){
+                replacementHTML += "<img src=" + additional[0][j].src + " title=" + additional[0][j].title;
+                if(additional[0][j].title=="On Netflix"){
+                    replacementHTML += " height=33px>";
+                }else{
+                    replacementHTML += " height=29px>";
+                }
+            }
+            images[i].getElementsByTagName("SPAN")[0].innerHTML = replacementHTML;
             images[i].getElementsByTagName("IMG")[0].title = imageTitles[0];
             images[i].getElementsByTagName("IMG")[0].src = imageSrcs[0];
             
         }else{
-            images[i].getElementsByTagName("SPAN")[0].innerHTML = "<h4>"+imageTitles[i+1]+"</h4>";
+           var replacementHTML = "";
+            replacementHTML += "<h6>"+imageTitles[i+1]+"</h6>";
+            for(var j=0;j<additional[i+1].length;j++){
+                replacementHTML += "<img src=" + additional[i+1][j].src + " title=" + additional[i+1][j].title;
+                if(additional[i+1][j].title=="On Netflix"){
+                    replacementHTML += " height=33px>";
+                }else{
+                    replacementHTML += " height=29px>";
+                }
+            }
+            images[i].getElementsByTagName("SPAN")[0].innerHTML = replacementHTML;
             images[i].getElementsByTagName("IMG")[0].title = imageTitles[i+1];
             images[i].getElementsByTagName("IMG")[0].src = imageSrcs[i+1];
         }
