@@ -1,6 +1,7 @@
+document.getElementById("comment").style.width = "250";
 function nameValidation() {
     if (document.forms["main"]["name"].value == "") {
-        alert("Please fill out your first name.");
+        alert("Please fill out your name.");
         return false;
     }
    if(document.forms["main"]["comment"].value == ""){
