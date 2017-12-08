@@ -67,17 +67,13 @@ td{
 
 @media only screen and (min-width:400px) and (max-width: 800px) {
     .genre{
-    background-color:#111;
     text-align: justify;
-    color: #ddd;
     letter-spacing: normal;
     padding: 10px 10px 10px 10px;
     font: 400 25px/1.8 "Lato", sans-serif;    
     }
     .barItem{
     width: 15%;
-    background-color:#111;
-    color:#ddd;
     text-align: center;
     padding: 15px 0px 15px 0px;
     display:inline-block;
@@ -92,17 +88,13 @@ td{
 
 @media only screen and (max-width: 400px) {
     .genre{
-    background-color:#111;
     text-align: justify;
-    color: #ddd;
     letter-spacing: normal;
     padding: 10px 10px 10px 10px;
     font: 400 25px/1.8 "Lato", sans-serif;    
     }
     .barItem{
     width: 15%;
-    background-color:#111;
-    color:#ddd;
     text-align: center;
     padding: 15px 0px 15px 0px;
     display:inline-block;
